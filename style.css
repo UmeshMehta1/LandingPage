@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rebeccapurple; */
+  padding: 0 3vw;
+
+  border-bottom: 2px solid #dadada;
+}
+
+nav .nav-part-2 {
+  display: flex;
+  gap: 4vw;
+}
+
+.box {
+  font-size: 2vw;
+  font-weight: 700px;
+}
+
+i {
+  align-items: center;
+  font-size: 2vw;
+  display: none;
+}
+
+nav h1 {
+  font-size: 3vw;
+}
+nav button {
+  background-color: #fcaa23;
+  color: white;
+  padding: 0.7vw 1.5vw;
+  border-radius: 5px;
+  border: none;
+}
+
+.containerFull {
+  /* height: calc(100% - 100px); */
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  position: relative;
+}
+
+.container-right {
+  height: 100%;
+  width: 50%;
+  /* background-color: aquamarine; */
+}
+
+.container-left {
+  height: 100%;
+  width: 50%;
+  margin: 2.8vh 0vw 0vw 2.6vw;
+
+  /* background-color: blue; */
+}
+
+.container-left h1 {
+  margin-bottom: 20px;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.container-left p {
+  font-size: 1.5vw;
+  margin-top: 5vh;
+}
+
+.container-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.container-left button {
+  margin-top: 20px;
+  background-color: #fcaa23;
+  color: white;
+  padding: 1vw 1vw;
+  border-radius: 10px;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  nav {
+    color: black;
+    padding: 0 3vw;
+  }
+  nav h1 {
+    font-size: 6vw;
+  }
+
+  nav .box {
+    font-size: 4vw;
+    display: none;
+  }
+  i {
+    font-size: 4vw;
+    display: block;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .containerFull {
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  .container-left {
+    width: 100%;
+    height: 45%;
+  }
+  .container-right {
+    width: 100%;
+    height: 55%;
+  }
+
+  .container-left h1 {
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+
+  .container-left p {
+    font-size: 3vw;
+    width: 100%;
+    margin-top: 2vh;
+    margin-top: 4vh;
+  }
+  .container-left button {
+    padding: 3vw 4vw;
+    font-size: 4vw;
+    font-weight: 700;
+  }
+}
